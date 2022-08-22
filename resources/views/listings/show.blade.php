@@ -34,5 +34,11 @@
         </div>
       </div>
     </x-card>
+
+    <x-card class="mt-4 flex space-x-6 p-2">
+      <a href="/listings/{{ $listing->id }}/edit">
+        <i class="fa-solid fa-pencil"></i> Edit
+      </a>
+    </x-card>
   </div>
 </x-layout>
