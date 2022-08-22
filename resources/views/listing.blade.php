@@ -11,20 +11,7 @@
 
         <h3 class="mb-2 text-2xl">{{ $listing->title }}</h3>
         <div class="mb-4 text-xl font-bold">{{ $listing->company }}</div>
-        <ul class="flex">
-          <li class="mr-2 rounded-xl bg-black px-3 py-1 text-white">
-            <a href="#">Laravel</a>
-          </li>
-          <li class="mr-2 rounded-xl bg-black px-3 py-1 text-white">
-            <a href="#">API</a>
-          </li>
-          <li class="mr-2 rounded-xl bg-black px-3 py-1 text-white">
-            <a href="#">Backend</a>
-          </li>
-          <li class="mr-2 rounded-xl bg-black px-3 py-1 text-white">
-            <a href="#">Vue</a>
-          </li>
-        </ul>
+        <x-listing-tags :tagsCsv="$listing->tags" />
         <div class="my-4 text-lg">
           <i class="fa-solid fa-location-dot"></i> {{ $listing->location }}
         </div>
