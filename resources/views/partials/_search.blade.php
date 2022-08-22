@@ -1,4 +1,4 @@
-<form action="">
+<form action="/">
   <div class="relative m-4 rounded-lg border-2 border-gray-100">
     <div class="absolute top-4 left-3">
       <i class="fa fa-search z-20 text-gray-400 hover:text-gray-500"></i>
