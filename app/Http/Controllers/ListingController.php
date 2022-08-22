@@ -14,7 +14,7 @@ class ListingController extends Controller
         return view('listings.index', [
             'listings' => Listing::latest()
                 ->filter(request(['tag', 'search']))
-                ->get()
+                ->paginate(6)
         ]);
     }
 
