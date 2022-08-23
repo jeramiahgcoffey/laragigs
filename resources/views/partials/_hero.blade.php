@@ -9,10 +9,13 @@
     <p class="my-4 text-2xl font-bold text-gray-200">
       Find or post Laravel jobs & projects
     </p>
+    @auth
+    @else
     <div>
-      <a href="register.html"
-        class="mt-2 inline-block rounded-xl border-2 border-white py-2 px-4 uppercase text-white hover:border-black hover:text-black">Sign
-        Up to List a Gig</a>
+      <a href="/register"
+      class="mt-2 inline-block rounded-xl border-2 border-white py-2 px-4 uppercase text-white hover:border-black hover:text-black">Sign
+      Up to List a Gig</a>
     </div>
+    @endauth
   </div>
 </section>
