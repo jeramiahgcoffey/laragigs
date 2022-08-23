@@ -31,6 +31,10 @@ Route::get('/listings/{listing}/edit', [ListingController::class, 'edit'])->midd
 Route::post('/listings', [ListingController::class, 'store'])
   ->middleware('auth');
 
+// Show Authenticated User's Listing
+Route::get('/listings/manage', [ListingController::class, 'manage'])
+  ->middleware('auth');
+
 // Update Listing
 Route::put('/listings/{listing}', [ListingController::class, 'update'])
   ->middleware('auth');
